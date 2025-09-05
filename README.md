@@ -32,7 +32,7 @@ The GitHub repository will be gradually updated soon❤️. If there is any prob
 As time goes by, the technology of MGR develops more and more rapidly, and more and more articles and methods are published.
 ![Micro Gesture Trend](image/MGs_trend.png)
 
-## Datasets constructed for MGR
+## 💎Datasets constructed for MGR
 
 | Date         | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |----------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
@@ -43,7 +43,7 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 | 2021/07 | TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
 | 2019/05 | Univ. of Oulu    | [Analyze Spontaneous Gestures for Emotional Stress State Recognition:  A Micro-gesture Dataset and Analysis with Deep Learning](https://ieeexplore.ieee.org/abstract/document/8756513)         | FG          | -      |
 
-## Methods
+## 🔨Methods
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
@@ -67,8 +67,11 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
 
+## ♥️Contributing
 
-# Citation
+We welcome everyone to contribute to this repository and help improve it. You can submit pull requests to add new papers, projects, and helpful materials, or to correct any errors that you may find. Please make sure that your pull requests follow the `"Date|Institute|Paper|Publication|Project link"` format. Thank you for your valuable contributions!
+
+## 🗒️Citation
 
 If you find our survey useful for your research, please cite us:
 
