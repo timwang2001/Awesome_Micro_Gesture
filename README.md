@@ -48,6 +48,7 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+|2025/10| LUT             | [MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition](https://arxiv.org/abs/2510.10478)                                                        | IEEE TMM       | -      |
 |2025/07| NPU             | [Hybrid-supervised Hypergraph-enhanced Transformer for Micro-gesture Based Emotion Recognition](https://ArXiv.org/pdf/2507.14867)                                                        | ArXiv       | -      |
 |2025/07| HFUT | [Online Micro-gesture Recognition Using Data Augmentation and Spatial-Temporal Attention](https://ArXiv.org/abs/2507.09512)| MiGA@IJCAI |-
 |2025/06| Goertek          | [DCSNN: An Efficient and High-speed sEMG-based Transient-state Micro-gesture Recognition Method on Wearable Devices](https://dl.acm.org/doi/10.1145/3729494)                            | PACM IMWUT  | -      |
