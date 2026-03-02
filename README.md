@@ -1,7 +1,7 @@
 # Awesome_Micro_Gesture [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 This is the official repository of `Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges`.
 
-> **Taorui Wang**<sup>1,\*</sup>, **Xun Lin**<sup>2,\*</sup>, [Zitong Yu](https://zitong-yu.github.io/yzt/)<sup>2,†</sup>, [Qilang Ye](https://rikeilong.github.io/)<sup>3,4</sup>, [Dan Guo](https://faculty.hfut.edu.cn/gd/en/index.htm)<sup>5</sup>, [Sergio Escalera](https://sergioescalera.com/)<sup>6</sup>, [Ghada Khoriba](https://nu.edu.eg/academic-staff/dr-ghada-khoriba)<sup>7</sup>, [Yong Xu](https://faculty.hitsz.edu.cn/xuyong)<sup>1,†</sup>  
+> **Taorui Wang**<sup>1,2\*</sup>, **Xun Lin**<sup>2,\*</sup>, [Zitong Yu](https://zitong-yu.github.io/yzt/)<sup>2,†</sup>, [Qilang Ye](https://rikeilong.github.io/)<sup>3,4</sup>, [Dan Guo](https://faculty.hfut.edu.cn/gd/en/index.htm)<sup>5</sup>, [Sergio Escalera](https://sergioescalera.com/)<sup>6</sup>, [Ghada Khoriba](https://nu.edu.eg/academic-staff/dr-ghada-khoriba)<sup>7</sup>, [Yong Xu](https://faculty.hitsz.edu.cn/xuyong)<sup>1,†</sup>  
 
 > <sup>1</sup>Harbin Institute of Technology, Shenzhen, China; 
 <sup>2</sup>Great Bay University, China; 
@@ -13,7 +13,7 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 > (\*Equal Contribution, †Corresponding Authors)
 <h5 align="center">  
 
- **Paper** | **[ArXiv](https://ArXiv.org/abs/2312.17432)** | **[Github Page](https://github.com/timwang2001/Awesome_Micro_Gesture)**
+ **Paper** | **[ArXiv](https://ArXiv.org/)** | **[Github Page](https://github.com/timwang2001/Awesome_Micro_Gesture)**
 
 </h5>
 
