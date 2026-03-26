@@ -39,7 +39,6 @@ NEGATIVE_TERMS = {
     "speech recognition",
 }
 POSITIVE_TERMS = {
-    "gesture",
     "micro-gesture",
     "micro gesture",
     "hand",
@@ -79,10 +78,26 @@ def write_seen_ids(path: Path, ids: Iterable[str]) -> None:
 
 
 def normalize_arxiv_id(raw_id: str) -> str:
-    match = re.search(r"arxiv\.org/(?:abs|pdf)/([^v?/]+)", raw_id)
+    # Handle full arXiv URLs first (both new- and old-style IDs).
+    # Examples:
+    #   https://arxiv.org/abs/2101.00001v2        -> 2101.00001
+    #   https://arxiv.org/pdf/2101.00001v2.pdf    -> 2101.00001
+    #   https://arxiv.org/abs/hep-th/9901001v2    -> hep-th/9901001
+    match = re.search(r"arxiv\.org/(?:abs|pdf)/([^?#]+)", raw_id)
     if match:
-        return match.group(1)
-    return raw_id.rsplit("/", 1)[-1]
+        id_part = match.group(1)
+    else:
+        # Fallback: use the last path segment, preserving previous behavior.
+        id_part = raw_id.rsplit("/", 1)[-1]
+
+    # Strip optional .pdf extension (for /pdf/ URLs or raw IDs ending in .pdf).
+    if id_part.endswith(".pdf"):
+        id_part = id_part[:-4]
+
+    # Strip optional version suffix like v2, v10, etc.
+    id_part = re.sub(r"v\d+$", "", id_part)
+
+    return id_part
 
 
 def build_query() -> str:
@@ -176,7 +191,7 @@ def escape_markdown_cell(text: str) -> str:
 
 def format_table_row(entry: dict) -> str:
     author_text = ", ".join(entry["authors"]) if entry["authors"] else "Unknown"
-    date_text = entry["published"].replace("-", "/")
+    date_text = entry["published"][:7].replace("-", "/")
     title = escape_markdown_cell(entry["title"])
     authors = escape_markdown_cell(author_text)
     arxiv_id = escape_markdown_cell(entry["id"])
