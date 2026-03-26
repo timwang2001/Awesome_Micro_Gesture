@@ -169,10 +169,18 @@ def is_relevant(text_blob: str) -> bool:
     return True
 
 
+def escape_markdown_cell(text: str) -> str:
+    """Escape characters that would break markdown table cells."""
+    return text.replace("|", r"\|")
+
+
 def format_table_row(entry: dict) -> str:
     author_text = ", ".join(entry["authors"]) if entry["authors"] else "Unknown"
     date_text = entry["published"].replace("-", "/")
-    paper_cell = f"[{entry['title']}]({entry['url']})<br>Authors: {author_text}<br>arXiv: {entry['id']}"
+    title = escape_markdown_cell(entry["title"])
+    authors = escape_markdown_cell(author_text)
+    arxiv_id = escape_markdown_cell(entry["id"])
+    paper_cell = f"[{title}]({entry['url']})<br>Authors: {authors}<br>arXiv: {arxiv_id}"
     return f"| {date_text} | - | {paper_cell} | ArXiv | - |"
 
 
