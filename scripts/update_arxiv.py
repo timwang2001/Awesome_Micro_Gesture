@@ -151,7 +151,7 @@ def fetch_recent_entries() -> list[dict]:
                 "title": title,
                 "url": f"https://arxiv.org/abs/{arxiv_id}",
                 "authors": authors,
-                "published": published.date().isoformat(),
+                "published": published.strftime("%Y-%m"),
                 "text_blob": f"{title.lower()} {summary}",
             }
         )
