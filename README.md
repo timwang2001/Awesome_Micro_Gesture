@@ -48,6 +48,14 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/03/23 | - | [mmFHE: mmWave Sensing with End-to-End Fully Homomorphic Encryption](https://arxiv.org/abs/2603.22437)<br>Authors: Tanvir Ahmed, Yixuan Gao, Adnan Armouti, Rajalakshmi Nandakumar<br>arXiv: 2603.22437 | ArXiv | - |
+| 2026/03/23 | - | [WiRD-Gest: Gesture Recognition In The Real World Using Range-Doppler Wi-Fi Sensing on COTS Hardware](https://arxiv.org/abs/2603.22131)<br>Authors: Jessica Sanson, Rahul C. Shah, Yazhou Zhu, Rafael Rosales, Valerio Frascolla<br>arXiv: 2603.22131 | ArXiv | - |
+| 2026/03/19 | - | [SurfaceXR: Fusing Smartwatch IMUs and Egocentric Hand Pose for Seamless Surface Interactions](https://arxiv.org/abs/2603.19529)<br>Authors: Vasco Xu, Brian Chen, Eric J. Gonzalez, Andrea Colaço, Henry Hoffmann, Mar Gonzalez-Franco, Karan Ahuja<br>arXiv: 2603.19529 | ArXiv | - |
+| 2026/03/17 | - | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269)<br>Authors: Jinsheng Wei, Zhaodi Xu, Guanming Lu, Haoyu Chen, Jingjie Yan<br>arXiv: 2603.16269 | ArXiv | - |
+| 2026/03/12 | - | [UniMotion: Self-Supervised Learning for Cross-Domain IMU Motion Recognition](https://arxiv.org/abs/2603.12218)<br>Authors: Prerna Khanna, Tanmay Srivastava, Shubham Jain, Aruna Balasubramanian<br>arXiv: 2603.12218 | ArXiv | - |
+| 2026/03/08 | - | [Active Inference for Micro-Gesture Recognition: EFE-Guided Temporal Sampling and Adaptive Learning](https://arxiv.org/abs/2603.07559)<br>Authors: Weijia Feng, Jingyu Yang, Ruojia Zhang, Fengtao Sun, Qian Gao, Chenyang Wang, Tongtong Su, Jia Guo, Xiaobai Li, Minglai Shao<br>arXiv: 2603.07559 | ArXiv | - |
+| 2026/02/27 | - | [Interpretable Multimodal Gesture Recognition for Drone and Mobile Robot Teleoperation via Log-Likelihood Ratio Fusion](https://arxiv.org/abs/2602.23694)<br>Authors: Seungyeol Baek, Jaspreet Singh, Lala Shakti Swarup Ray, Hymalai Bello, Paul Lukowicz, Sungho Suh<br>arXiv: 2602.23694 | ArXiv | - |
+| 2026/02/25 | - | [iMiGUE-Speech: A Spontaneous Speech Dataset for Affective Analysis](https://arxiv.org/abs/2602.21464)<br>Authors: Sofoklis Kakouros, Fang Kang, Haoyu Chen<br>arXiv: 2602.21464 | ArXiv | - |
 |2025/07| NPU             | [Hybrid-supervised Hypergraph-enhanced Transformer for Micro-gesture Based Emotion Recognition](https://ArXiv.org/pdf/2507.14867)                                                        | ArXiv       | -      |
 |2025/07| HFUT | [Online Micro-gesture Recognition Using Data Augmentation and Spatial-Temporal Attention](https://ArXiv.org/abs/2507.09512)| MiGA@IJCAI |-
 |2025/06| Goertek          | [DCSNN: An Efficient and High-speed sEMG-based Transient-state Micro-gesture Recognition Method on Wearable Devices](https://dl.acm.org/doi/10.1145/3729494)                            | PACM IMWUT  | -      |
@@ -67,8 +75,6 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## 🤖 arXiv Automation
 - Workflow: `.github/workflows/update_arxiv.yml` runs weekly and on manual trigger.
 - Script: `scripts/update_arxiv.py` queries arXiv, filters relevant results, deduplicates by arXiv ID, prepends new rows to the `## 🔨Methods` table, and tracks seen IDs in `data/seen_arxiv_ids.txt`.
