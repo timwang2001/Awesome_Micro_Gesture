@@ -2,7 +2,14 @@
 
 ## Latest arXiv Papers
 <!-- ARXIV_PAPERS_START -->
-- _No recent arXiv updates yet. Run the updater workflow to populate this list._
+- [mmFHE: mmWave Sensing with End-to-End Fully Homomorphic Encryption](https://arxiv.org/abs/2603.22437) — Authors: Tanvir Ahmed, Yixuan Gao, Adnan Armouti, Rajalakshmi Nandakumar; Published: 2026-03-23; arXiv: 2603.22437
+- [WiRD-Gest: Gesture Recognition In The Real World Using Range-Doppler Wi-Fi Sensing on COTS Hardware](https://arxiv.org/abs/2603.22131) — Authors: Jessica Sanson, Rahul C. Shah, Yazhou Zhu, Rafael Rosales, Valerio Frascolla; Published: 2026-03-23; arXiv: 2603.22131
+- [SurfaceXR: Fusing Smartwatch IMUs and Egocentric Hand Pose for Seamless Surface Interactions](https://arxiv.org/abs/2603.19529) — Authors: Vasco Xu, Brian Chen, Eric J. Gonzalez, Andrea Colaço, Henry Hoffmann, Mar Gonzalez-Franco, Karan Ahuja; Published: 2026-03-19; arXiv: 2603.19529
+- [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) — Authors: Jinsheng Wei, Zhaodi Xu, Guanming Lu, Haoyu Chen, Jingjie Yan; Published: 2026-03-17; arXiv: 2603.16269
+- [UniMotion: Self-Supervised Learning for Cross-Domain IMU Motion Recognition](https://arxiv.org/abs/2603.12218) — Authors: Prerna Khanna, Tanmay Srivastava, Shubham Jain, Aruna Balasubramanian; Published: 2026-03-12; arXiv: 2603.12218
+- [Active Inference for Micro-Gesture Recognition: EFE-Guided Temporal Sampling and Adaptive Learning](https://arxiv.org/abs/2603.07559) — Authors: Weijia Feng, Jingyu Yang, Ruojia Zhang, Fengtao Sun, Qian Gao, Chenyang Wang, Tongtong Su, Jia Guo, Xiaobai Li, Minglai Shao; Published: 2026-03-08; arXiv: 2603.07559
+- [Interpretable Multimodal Gesture Recognition for Drone and Mobile Robot Teleoperation via Log-Likelihood Ratio Fusion](https://arxiv.org/abs/2602.23694) — Authors: Seungyeol Baek, Jaspreet Singh, Lala Shakti Swarup Ray, Hymalai Bello, Paul Lukowicz, Sungho Suh; Published: 2026-02-27; arXiv: 2602.23694
+- [iMiGUE-Speech: A Spontaneous Speech Dataset for Affective Analysis](https://arxiv.org/abs/2602.21464) — Authors: Sofoklis Kakouros, Fang Kang, Haoyu Chen; Published: 2026-02-25; arXiv: 2602.21464
 <!-- ARXIV_PAPERS_END -->
 
 This is the official repository of `Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges`.
