@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import datetime as dt
+import os
 import re
+import time
 import sys
 import urllib.parse
 import urllib.request
@@ -15,9 +17,6 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parents[1]
 README_PATH = ROOT / "README.md"
 SEEN_IDS_PATH = ROOT / "data" / "seen_arxiv_ids.txt"
-
-START_MARKER = "<!-- ARXIV_PAPERS_START -->"
-END_MARKER = "<!-- ARXIV_PAPERS_END -->"
 
 ARXIV_API_URL = "https://export.arxiv.org/api/query"
 QUERY_TERMS = [
@@ -60,6 +59,7 @@ MAX_PER_RUN = 8
 MAX_SEARCH_RESULTS = 80
 RECENT_DAYS = 45
 REQUEST_TIMEOUT_SECONDS = 25
+MAX_FETCH_RETRIES = 3
 
 NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -107,8 +107,22 @@ def fetch_recent_entries() -> list[dict]:
     url = ARXIV_API_URL + "?" + urllib.parse.urlencode(params)
 
     request = urllib.request.Request(url, headers={"User-Agent": "Awesome-Micro-Gesture-ArXiv-Updater/1.0"})
-    with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
-        payload = response.read()
+    payload: bytes | None = None
+    last_error: Exception | None = None
+    for attempt in range(1, MAX_FETCH_RETRIES + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
+                payload = response.read()
+            break
+        except Exception as exc:  # noqa: BLE001 - keep error handling broad for network robustness.
+            last_error = exc
+            if attempt < MAX_FETCH_RETRIES:
+                time.sleep(attempt * 2)
+            else:
+                raise RuntimeError(f"arXiv request failed after {MAX_FETCH_RETRIES} attempts: {last_error}") from exc
+
+    if payload is None:
+        raise RuntimeError("arXiv response payload is empty.")
 
     root = ET.fromstring(payload)
 
@@ -155,41 +169,63 @@ def is_relevant(text_blob: str) -> bool:
     return True
 
 
-def format_bullet(entry: dict) -> str:
+def format_table_row(entry: dict) -> str:
     author_text = ", ".join(entry["authors"]) if entry["authors"] else "Unknown"
-    return (
-        f"- [{entry['title']}]({entry['url']}) — Authors: {author_text}; "
-        f"Published: {entry['published']}; arXiv: {entry['id']}"
-    )
+    date_text = entry["published"].replace("-", "/")
+    paper_cell = f"[{entry['title']}]({entry['url']})<br>Authors: {author_text}<br>arXiv: {entry['id']}"
+    return f"| {date_text} | - | {paper_cell} | ArXiv | - |"
 
 
-def ensure_marker_block(readme_text: str) -> str:
-    if START_MARKER in readme_text and END_MARKER in readme_text:
-        return readme_text
-
+def update_methods_table(readme_text: str, new_rows: list[str]) -> str:
     lines = readme_text.splitlines()
-    insert_at = 1 if lines and lines[0].startswith("#") else 0
-    new_block = [
-        "",
-        "## Latest arXiv Papers",
-        START_MARKER,
-        "- _No recent arXiv updates yet. Run the updater workflow to populate this list._",
-        END_MARKER,
-        "",
-    ]
-    updated_lines = lines[:insert_at] + new_block + lines[insert_at:]
-    return "\n".join(updated_lines).rstrip() + "\n"
+    methods_idx = None
+    for i, line in enumerate(lines):
+        if re.match(r"^##\s+.*methods", line.strip(), flags=re.IGNORECASE):
+            methods_idx = i
+            break
+    if methods_idx is None:
+        # Fallback: create a new Methods section at the end to avoid hard failure.
+        block = [
+            "",
+            "## 🔨Methods",
+            "",
+            "| Date    | Institute | Paper | Publication | Others |",
+            "|---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|",
+            *new_rows,
+            "",
+        ]
+        return readme_text.rstrip() + "\n" + "\n".join(block)
 
+    table_start = None
+    for i in range(methods_idx + 1, len(lines)):
+        if lines[i].startswith("|") and "Date" in lines[i] and "Paper" in lines[i]:
+            table_start = i
+            break
+    if table_start is None or table_start + 1 >= len(lines):
+        insert_at = methods_idx + 1
+        table_header = [
+            "",
+            "| Date    | Institute | Paper | Publication | Others |",
+            "|---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|",
+        ]
+        updated = lines[:insert_at] + table_header + new_rows + lines[insert_at:]
+        return "\n".join(updated).rstrip() + "\n"
 
-def replace_marker_content(readme_text: str, new_lines: list[str]) -> str:
-    pattern = re.compile(
-        rf"{re.escape(START_MARKER)}\n.*?\n{re.escape(END_MARKER)}",
-        flags=re.DOTALL,
-    )
-    replacement = "\n".join([START_MARKER, *new_lines, END_MARKER])
-    if not pattern.search(readme_text):
-        raise RuntimeError("README marker block missing after initialization.")
-    return pattern.sub(replacement, readme_text, count=1)
+    # header line + separator line
+    data_start = table_start + 2
+    data_end = data_start
+    while data_end < len(lines):
+        line = lines[data_end]
+        if line.startswith("## "):
+            break
+        if line and not line.startswith("|"):
+            break
+        data_end += 1
+
+    existing_rows = [row for row in lines[data_start:data_end] if row.strip()]
+    merged_rows = new_rows + existing_rows
+    updated = lines[:data_start] + merged_rows + lines[data_end:]
+    return "\n".join(updated).rstrip() + "\n"
 
 
 def main() -> int:
@@ -202,8 +238,13 @@ def main() -> int:
     try:
         entries = fetch_recent_entries()
     except Exception as exc:
-        print(f"ERROR: failed to fetch arXiv feed: {exc}", file=sys.stderr)
-        return 1
+        strict_mode = os.getenv("ARXIV_STRICT_FETCH", "0") == "1"
+        level = "ERROR" if strict_mode else "WARNING"
+        print(f"{level}: failed to fetch arXiv feed: {exc}", file=sys.stderr)
+        if strict_mode:
+            return 1
+        print("Continuing without README/data changes because strict fetch mode is disabled.")
+        return 0
 
     deduped: dict[str, dict] = {}
     for item in entries:
@@ -214,14 +255,13 @@ def main() -> int:
     new_entries = [item for item in candidate_entries if item["id"] not in seen_ids][:MAX_PER_RUN]
 
     readme_text = README_PATH.read_text(encoding="utf-8")
-    readme_text = ensure_marker_block(readme_text)
 
-    if new_entries:
-        bullets = [format_bullet(entry) for entry in new_entries]
-    else:
-        bullets = ["- _No new relevant papers found in this run._"]
+    if not new_entries:
+        print("No new relevant papers found; README and seen IDs are unchanged.")
+        return 0
 
-    updated_readme = replace_marker_content(readme_text, bullets)
+    rows = [format_table_row(entry) for entry in new_entries]
+    updated_readme = update_methods_table(readme_text, rows)
     README_PATH.write_text(updated_readme, encoding="utf-8")
 
     updated_seen = set(seen_ids)

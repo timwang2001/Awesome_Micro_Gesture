@@ -1,10 +1,5 @@
 # Awesome_Micro_Gesture [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Latest arXiv Papers
-<!-- ARXIV_PAPERS_START -->
-- _No recent arXiv updates yet. Run the updater workflow to populate this list._
-<!-- ARXIV_PAPERS_END -->
-
 This is the official repository of `Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges`.
 
 > **Taorui Wang**<sup>1,2\*</sup>, **Xun Lin**<sup>2,\*</sup>, [Zitong Yu](https://zitong-yu.github.io/yzt/)<sup>2,†</sup>, [Qilang Ye](https://rikeilong.github.io/)<sup>3,4</sup>, [Dan Guo](https://faculty.hfut.edu.cn/gd/en/index.htm)<sup>5</sup>, [Sergio Escalera](https://sergioescalera.com/)<sup>6</sup>, [Ghada Khoriba](https://nu.edu.eg/academic-staff/dr-ghada-khoriba)<sup>7</sup>, [Yong Xu](https://faculty.hitsz.edu.cn/xuyong)<sup>1,†</sup>  
@@ -76,10 +71,11 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 
 ## 🤖 arXiv Automation
 - Workflow: `.github/workflows/update_arxiv.yml` runs weekly and on manual trigger.
-- Script: `scripts/update_arxiv.py` queries arXiv, filters relevant results, deduplicates by arXiv ID, updates the README marker block, and tracks seen IDs in `data/seen_arxiv_ids.txt`.
+- Script: `scripts/update_arxiv.py` queries arXiv, filters relevant results, deduplicates by arXiv ID, prepends new rows to the `## 🔨Methods` table, and tracks seen IDs in `data/seen_arxiv_ids.txt`.
 - Manual trigger: GitHub → **Actions** → **Update Latest arXiv Papers** → **Run workflow**.
 - Change keywords: edit `QUERY_TERMS`, `POSITIVE_TERMS`, and `NEGATIVE_TERMS` in `scripts/update_arxiv.py`.
 - Change schedule: edit the `cron` expression in `.github/workflows/update_arxiv.yml`.
+- If PR creation fails, make sure repository setting **Actions → General → Workflow permissions** is set to **Read and write permissions** and allows Actions to create pull requests.
 
 ## ♥️Contributing
 
