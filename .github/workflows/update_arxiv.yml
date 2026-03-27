@@ -1,0 +1,57 @@
+name: Update Latest arXiv Papers
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly on Sunday 18:00 UTC (Monday 02:00 Singapore, UTC+8)
+    - cron: "0 18 * * 0"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-arxiv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install minimal dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Update README with recent arXiv papers
+        env:
+          # Keep workflow resilient to transient network/API errors.
+          ARXIV_STRICT_FETCH: "0"
+        run: python scripts/update_arxiv.py
+
+      - name: Create pull request when files changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ github.token }}
+          branch: chore/auto-update-arxiv
+          branch-suffix: timestamp
+          delete-branch: true
+          commit-message: "chore: update latest arxiv papers"
+          title: "chore: update latest arXiv papers"
+          body: |
+            ## Summary
+            - run `scripts/update_arxiv.py`
+            - prepend recent arXiv papers to the `## 🔨Methods` README table
+            - update `data/seen_arxiv_ids.txt`
+
+            This PR was created automatically by the GitHub Actions workflow.
+          labels: |
+            automation
+            arxiv
+          add-paths: |
+            README.md
+            data/seen_arxiv_ids.txt
