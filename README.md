@@ -48,6 +48,14 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/04/01 | - | [Semantically Annotated Multimodal Dataset for RF Interpretation and Prediction](https://arxiv.org/abs/2604.01433)<br>Authors: Steve Blandino, Jelena Senic, Raied Caromi, Samuel Berweger, Anuraag Bodi, Camillo Gentile, Nada Golmie<br>arXiv: 2604.01433 | ArXiv | - |
+| 2026/03/27 | - | [SHANDS: A Multi-View Dataset and Benchmark for Surgical Hand-Gesture and Error Recognition Toward Medical Training](https://arxiv.org/abs/2603.26400)<br>Authors: Le Ma, Thiago Freitas dos Santos, Nadia Magnenat-Thalmann, Katarzyna Wac<br>arXiv: 2603.26400 | ArXiv | - |
+| 2026/03/27 | - | [HandVQA: Diagnosing and Improving Fine-Grained Spatial Reasoning about Hands in Vision-Language Models](https://arxiv.org/abs/2603.26362)<br>Authors: MD Khalequzzaman Chowdhury Sayem, Mubarrat Tajoar Chowdhury, Yihalem Yimolal Tiruneh, Muneeb A. Khan, Muhammad Salman Ali, Binod Bhattarai, Seungryul Baek<br>arXiv: 2603.26362 | ArXiv | - |
+| 2026/03/26 | - | [Dynamic LIBRAS Gesture Recognition via CNN over Spatiotemporal Matrix Representation](https://arxiv.org/abs/2603.25863)<br>Authors: Jasmine Moreira<br>arXiv: 2603.25863 | ArXiv | - |
+| 2026/03/23 | - | [mmFHE: mmWave Sensing with End-to-End Fully Homomorphic Encryption](https://arxiv.org/abs/2603.22437)<br>Authors: Tanvir Ahmed, Yixuan Gao, Adnan Armouti, Rajalakshmi Nandakumar<br>arXiv: 2603.22437 | ArXiv | - |
+| 2026/03/23 | - | [WiRD-Gest: Gesture Recognition In The Real World Using Range-Doppler Wi-Fi Sensing on COTS Hardware](https://arxiv.org/abs/2603.22131)<br>Authors: Jessica Sanson, Rahul C. Shah, Yazhou Zhu, Rafael Rosales, Valerio Frascolla<br>arXiv: 2603.22131 | ArXiv | - |
+| 2026/03/19 | - | [SurfaceXR: Fusing Smartwatch IMUs and Egocentric Hand Pose for Seamless Surface Interactions](https://arxiv.org/abs/2603.19529)<br>Authors: Vasco Xu, Brian Chen, Eric J. Gonzalez, Andrea Colaço, Henry Hoffmann, Mar Gonzalez-Franco, Karan Ahuja<br>arXiv: 2603.19529 | ArXiv | - |
+| 2026/03/17 | - | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269)<br>Authors: Jinsheng Wei, Zhaodi Xu, Guanming Lu, Haoyu Chen, Jingjie Yan<br>arXiv: 2603.16269 | ArXiv | - |
 |2025/07| NPU             | [Hybrid-supervised Hypergraph-enhanced Transformer for Micro-gesture Based Emotion Recognition](https://ArXiv.org/pdf/2507.14867)                                                        | ArXiv       | -      |
 |2025/07| HFUT | [Online Micro-gesture Recognition Using Data Augmentation and Spatial-Temporal Attention](https://ArXiv.org/abs/2507.09512)| MiGA@IJCAI |-
 |2025/06| Goertek          | [DCSNN: An Efficient and High-speed sEMG-based Transient-state Micro-gesture Recognition Method on Wearable Devices](https://dl.acm.org/doi/10.1145/3729494)                            | PACM IMWUT  | -      |
@@ -67,8 +75,6 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## 🤖 arXiv Automation
 - Workflow: `.github/workflows/update_arxiv.yml` runs weekly and on manual trigger.
 - Script: `scripts/update_arxiv.py` queries arXiv, filters relevant results, deduplicates by arXiv ID, prepends new rows to the `## 🔨Methods` table, and tracks seen IDs in `data/seen_arxiv_ids.txt`.
