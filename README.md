@@ -14,29 +14,39 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 > (\*Equal Contribution, †Corresponding Authors)
 <h5 align="center">  
 
- **Paper** | **[ArXiv](https://ArXiv.org/)** | **[Github Page](https://github.com/timwang2001/Awesome_Micro_Gesture)**
+ ****[Paper](https://www.mi-research.net/article/doi/10.1007/s11633-025-1629-x)**** | **[ArXiv](https://ArXiv.org/)** | **[Github Page](https://github.com/timwang2001/Awesome_Micro_Gesture)**
 
 </h5>
 
 ![Comparison of Gestures and Micro-Gestures](image/comparison.png)
 
 ## 📢 News
-[07/23/2024]
+**[07/04/2026]**
 
-✨ We've recently released our survey: “Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges”!
+🎉 Our survey has been accepted by *Machine Intelligence Research* (IF 8.7, JCR Q1). Congratulations to all collaborators!
 
-We present the first comprehensive survey of the Micro-Gesture Recognition. It covers several key aspects: 1) datasets with two diverse modalities and their collection protocols; 2) recognition methods across supervised, unsupervised, contrastive, multimodal fusion, and multimodal large language model (MLLM) paradigms; and 3) challenges such as long-tail distribution, cross-dataset generalization, and bridging recognition with emotion understanding.
+**[07/23/2025]**
 
-The GitHub repository will be gradually updated soon❤️. If there is any problem, feel free to contact us❤️.
+✨ We released our survey: “Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges”!
+
+This repository is a living companion to the paper: we continuously organize datasets, methods, and resources to help researchers quickly follow progress in micro-gesture recognition.
+
+We present the first comprehensive survey on micro-gesture recognition. It covers three key aspects: 1) datasets with two diverse modalities and their collection protocols; 2) recognition methods across supervised, unsupervised, contrastive, multimodal fusion, and multimodal large language model (MLLM) paradigms; and 3) open challenges such as long-tail distribution, cross-dataset generalization, and bridging recognition with emotion understanding.
+
+If you notice missing work or any issue in the list, feel free to open an issue or contact us.
 
 ## Timeline of MGR method Evolution
-As time goes by, the technology of MGR develops more and more rapidly, and more and more articles and methods are published.
+This timeline highlights how micro-gesture recognition has evolved, from early dataset creation to today's multimodal and MLLM-driven methods, and offers a quick view of the field's growth trajectory.
 ![Micro Gesture Trend](image/MGs_trend.png)
 
 ## 💎Datasets constructed for MGR
+This section summarizes publicly available datasets for micro-gesture recognition and related affective understanding tasks. We list release time, source institute, publication venue, and available project links to support quick comparison and dataset selection.
 
 | Date         | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |----------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/03 | UAEU | [MA-Bench: Towards Fine-grained Micro-Action Understanding](https://arxiv.org/pdf/2603.26586)| CVPR | - |
+| 2026/02 | Univ. of Oulu | [iMiGUE-Speech: A Spontaneous Speech Dataset for Affective Analysis
+](https://arxiv.org/abs/2602.21464) | Speech Prosody | - |
 | 2025/04  | LUT             | [DEEMO: De-identity Multimodal Emotion Recognition and Reasoning](https://ArXiv.org/pdf/2504.19549)                                                        | ArXiv       | -      |
 | 2024/05 | LUT          | [EALD-MLLM: Emotion Analysis in Long-sequential and De-identity videos with Multi-modal Large Language Model](https://ArXiv.org/abs/2405.00574)                            | ArXiv  | -      |
 | 2024/03 | HFUT      | [Benchmarking Micro-action Recognition: Dataset, Methods, and Applications](https://ArXiv.org/abs/2403.05234)                 | TCSVT       | -      |
@@ -45,9 +55,13 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 | 2019/05 | Univ. of Oulu    | [Analyze Spontaneous Gestures for Emotional Stress State Recognition:  A Micro-gesture Dataset and Analysis with Deep Learning](https://ieeexplore.ieee.org/abstract/document/8756513)         | FG          | -      |
 
 ## 🔨Methods
+This section tracks representative MGR methods in chronological order, covering supervised, self-supervised/unsupervised, multimodal fusion, and efficiency-oriented designs. It is updated to reflect both peer-reviewed publications and influential preprints.
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
+| 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
+|2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
 |2025/10| LUT             | [MSF-Mamba: Motion-aware State Fusion Mamba for Efficient Micro-Gesture Recognition](https://arxiv.org/abs/2510.10478)                                                        | IEEE TMM       | -      |
 |2025/07| NPU             | [Hybrid-supervised Hypergraph-enhanced Transformer for Micro-gesture Based Emotion Recognition](https://ArXiv.org/pdf/2507.14867)                                                        | ArXiv       | -      |
 |2025/07| HFUT | [Online Micro-gesture Recognition Using Data Augmentation and Spatial-Temporal Attention](https://ArXiv.org/abs/2507.09512)| MiGA@IJCAI |-
@@ -71,6 +85,7 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 
 
 ## 🤖 arXiv Automation
+To keep the method list fresh, we provide an automatic arXiv monitoring pipeline:
 - Workflow: `.github/workflows/update_arxiv.yml` runs weekly and on manual trigger.
 - Script: `scripts/update_arxiv.py` queries arXiv, filters relevant results, deduplicates by arXiv ID, prepends new rows to the `## 🔨Methods` table, and tracks seen IDs in `data/seen_arxiv_ids.txt`.
 - Manual trigger: GitHub → **Actions** → **Update Latest arXiv Papers** → **Run workflow**.
@@ -80,12 +95,23 @@ As time goes by, the technology of MGR develops more and more rapidly, and more 
 
 ## ♥️Contributing
 
-We welcome everyone to contribute to this repository and help improve it. You can submit pull requests to add new papers, projects, and helpful materials, or to correct any errors that you may find. Please make sure that your pull requests follow the `"Date|Institute|Paper|Publication|Project link"` format. Thank you for your valuable contributions!
+We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
 
 ## 🗒️Citation
 
 If you find our survey useful for your research, please cite us:
 
 ```bibtex
-
+@Article{MIR-2025-09-543,
+title = {Micro-gesture Recognition: A Comprehensive Survey of Datasets, Methods, and Challenges},
+journal = {Machine Intelligence Research},
+volume = {23},
+number = {2},
+pages = {308-330},
+year = {2026},
+issn = {2731-538X},
+doi = {10.1007/s11633-025-1629-x},	
+url = {https://www.mi-research.net/en/article/doi/10.1007/s11633-025-1629-x},
+author = {Taorui Wang and Xun Lin and Yong Xu and Qilang Ye and Dan Guo and Sergio Escalera and Ghada Khoriba and Zitong Yu}
+}
 ```
