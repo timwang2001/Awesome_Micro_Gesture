@@ -45,8 +45,7 @@ This section summarizes publicly available datasets for micro-gesture recognitio
 | Date         | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |----------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
 | 2026/03 | UAEU | [MA-Bench: Towards Fine-grained Micro-Action Understanding](https://arxiv.org/pdf/2603.26586)| CVPR | - |
-| 2026/02 | Univ. of Oulu | [iMiGUE-Speech: A Spontaneous Speech Dataset for Affective Analysis
-](https://arxiv.org/abs/2602.21464) | Speech Prosody | - |
+| 2026/02 | Univ. of Oulu | [iMiGUE-Speech: A Spontaneous Speech Dataset for Affective Analysis](https://arxiv.org/abs/2602.21464) | Speech Prosody | - |
 | 2025/04  | LUT             | [DEEMO: De-identity Multimodal Emotion Recognition and Reasoning](https://ArXiv.org/pdf/2504.19549)                                                        | ArXiv       | -      |
 | 2024/05 | LUT          | [EALD-MLLM: Emotion Analysis in Long-sequential and De-identity videos with Multi-modal Large Language Model](https://ArXiv.org/abs/2405.00574)                            | ArXiv  | -      |
 | 2024/03 | HFUT      | [Benchmarking Micro-action Recognition: Dataset, Methods, and Applications](https://ArXiv.org/abs/2403.05234)                 | TCSVT       | -      |
