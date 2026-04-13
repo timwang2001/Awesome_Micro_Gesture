@@ -83,15 +83,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
 
 
-## 🤖 arXiv Automation
-To keep the method list fresh, we provide an automatic arXiv monitoring pipeline:
-- Workflow: `.github/workflows/update_arxiv.yml` runs weekly and on manual trigger.
-- Script: `scripts/update_arxiv.py` queries arXiv, filters relevant results, deduplicates by arXiv ID, prepends new rows to the `## 🔨Methods` table, and tracks seen IDs in `data/seen_arxiv_ids.txt`.
-- Manual trigger: GitHub → **Actions** → **Update Latest arXiv Papers** → **Run workflow**.
-- Change keywords: edit `QUERY_TERMS`, `POSITIVE_TERMS`, and `NEGATIVE_TERMS` in `scripts/update_arxiv.py`.
-- Change schedule: edit the `cron` expression in `.github/workflows/update_arxiv.yml`.
-- If PR creation fails, make sure repository setting **Actions → General → Workflow permissions** is set to **Read and write permissions** and allows Actions to create pull requests.
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
