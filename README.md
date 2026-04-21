@@ -2,7 +2,7 @@
 
 This is the official repository of `Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges`.
 
-> **Taorui Wang**<sup>1,2\*</sup>, **Xun Lin**<sup>2,\*</sup>, [Zitong Yu](https://zitong-yu.github.io/yzt/)<sup>2,†</sup>, [Qilang Ye](https://rikeilong.github.io/)<sup>3,4</sup>, [Dan Guo](https://faculty.hfut.edu.cn/gd/en/index.htm)<sup>5</sup>, [Sergio Escalera](https://sergioescalera.com/)<sup>6</sup>, [Ghada Khoriba](https://nu.edu.eg/academic-staff/dr-ghada-khoriba)<sup>7</sup>, [Yong Xu](https://faculty.hitsz.edu.cn/xuyong)<sup>1,†</sup>  
+> **[Taorui Wang](https://scholar.google.com/citations?user=k1fJCkIAAAAJ&hl=zh-CN)**<sup>1,2\*</sup>, **Xun Lin**<sup>2,\*</sup>, [Zitong Yu](https://zitong-yu.github.io/yzt/)<sup>2,†</sup>, [Qilang Ye](https://rikeilong.github.io/)<sup>3,4</sup>, [Dan Guo](https://faculty.hfut.edu.cn/gd/en/index.htm)<sup>5</sup>, [Sergio Escalera](https://sergioescalera.com/)<sup>6</sup>, [Ghada Khoriba](https://nu.edu.eg/academic-staff/dr-ghada-khoriba)<sup>7</sup>, [Yong Xu](https://faculty.hitsz.edu.cn/xuyong)<sup>1,†</sup>  
 
 > <sup>1</sup>Harbin Institute of Technology, Shenzhen, China; 
 <sup>2</sup>Great Bay University, China; 
@@ -21,6 +21,12 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 ![Comparison of Gestures and Micro-Gestures](image/comparison.png)
 
 ## 📢 News
+
+**[21/04/2026]**
+
+⚠️Important Update:
+We found a typo at Table.1 Row MA.52. The sample should be 22,422, not 3712. We feel sorry for this. For more information, please refer to the official site of [MA52](https://huggingface.co/datasets/kunli-cs/MA-52).
+
 **[07/04/2026]**
 
 🎉 Our survey has been accepted by *Machine Intelligence Research* (IF 8.7, JCR Q1). Congratulations to all collaborators!
@@ -35,7 +41,7 @@ We present the first comprehensive survey on micro-gesture recognition. It cover
 
 If you notice missing work or any issue in the list, feel free to open an issue or contact us.
 
-## Timeline of MGR method Evolution
+## Timeline of MGR Method Evolution
 This timeline highlights how micro-gesture recognition has evolved, from early dataset creation to today's multimodal and MLLM-driven methods, and offers a quick view of the field's growth trajectory.
 ![Micro Gesture Trend](image/MGs_trend.png)
 
