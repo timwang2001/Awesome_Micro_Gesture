@@ -24,12 +24,18 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 
 **[21/04/2026]**
 
-⚠️Important Update:
-We found a typo at Table.1 Row MA.52. The sample should be 22,422, not 3712. We feel sorry for this. For more information, please refer to the official site of [MA52](https://huggingface.co/datasets/kunli-cs/MA-52).
+
+**Correction**
+
+A typo was identified in Table 1 for the **MA-52** entry.
+
+The correct sample count is **22,422**, not **3,712**.
+
+This has now been corrected. We apologize for the mistake. Please refer to the official [MA-52 dataset page](https://huggingface.co/datasets/kunli-cs/MA-52) for the source information.
 
 **[07/04/2026]**
 
-🎉 Our survey has been accepted by *Machine Intelligence Research* (IF 8.7, JCR Q1). Congratulations to all collaborators!
+🎉 Our survey has been accepted by *Machine Intelligence Research* (IF **8.7**, JCR **Q1**). Congratulations to all collaborators!
 
 **[07/23/2025]**
 
