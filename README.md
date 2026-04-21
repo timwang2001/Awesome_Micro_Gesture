@@ -29,7 +29,7 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 > The correct number of samples is **22,422**, not **3,712**.
 >
 > This issue has now been corrected. We apologize for the mistake.
-> Please refer to the official [MA-52 dataset page](https://huggingface.co/datasets/kunli-cs/MA-52) for the source information.
+> Please refer to the official [MA-52 dataset](https://huggingface.co/datasets/kunli-cs/MA-52) for the source information.
 
 > [!TIP]
 > **2026-04-07 · Congratulations!**
