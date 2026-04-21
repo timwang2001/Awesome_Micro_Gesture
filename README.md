@@ -22,32 +22,35 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 
 ## 📢 News
 
-**[21/04/2026]**
-
-![Correction](https://img.shields.io/badge/Update-Correction-orange)
-
 > [!WARNING]
-> **Correction on Table 1**
+> **2026-04-21 · Correction on Table 1**
 >
 > We identified a typo in the **MA-52** entry of **Table 1**.
 > The correct number of samples is **22,422**, not **3,712**.
 >
-> This has now been corrected. We apologize for the mistake.
+> This issue has now been corrected. We apologize for the mistake.
 > Please refer to the official [MA-52 dataset page](https://huggingface.co/datasets/kunli-cs/MA-52) for the source information.
 
-**[07/04/2026]**
+> [!TIP]
+> **2026-04-07 · Congratulations!**
+>
+> Our survey has been accepted by *Machine Intelligence Research*
+> (**Impact Factor: 8.7, JCR Q1**).
+>
+> Congratulations to all collaborators!
 
-🎉 Our survey has been accepted by *Machine Intelligence Research* (IF **8.7**, JCR **Q1**). Congratulations to all collaborators!
+> [!NOTE]
+> **2025-07-23 · Repository Released**
+>
+> We released our survey,
+> **_Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges_**.
+>
+> This repository serves as a living companion to the paper and continuously
+> organizes datasets, methods, and related resources for the community.
+>
+> If you notice any missing work or incorrect entry, please feel free to open
+> an issue or contact us.
 
-**[07/23/2025]**
-
-✨ We released our survey: “Micro-Gesture Recognition: A Survey of Datasets, Methods, and Challenges”!
-
-This repository is a living companion to the paper: we continuously organize datasets, methods, and resources to help researchers quickly follow progress in micro-gesture recognition.
-
-We present the first comprehensive survey on micro-gesture recognition. It covers three key aspects: 1) datasets with two diverse modalities and their collection protocols; 2) recognition methods across supervised, unsupervised, contrastive, multimodal fusion, and multimodal large language model (MLLM) paradigms; and 3) open challenges such as long-tail distribution, cross-dataset generalization, and bridging recognition with emotion understanding.
-
-If you notice missing work or any issue in the list, feel free to open an issue or contact us.
 
 ## Timeline of MGR Method Evolution
 This timeline highlights how micro-gesture recognition has evolved, from early dataset creation to today's multimodal and MLLM-driven methods, and offers a quick view of the field's growth trajectory.
