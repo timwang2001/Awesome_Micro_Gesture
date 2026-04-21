@@ -24,14 +24,16 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 
 **[21/04/2026]**
 
+![Correction](https://img.shields.io/badge/Update-Correction-orange)
 
-**Correction**
-
-A typo was identified in Table 1 for the **MA-52** entry.
-
-The correct sample count is **22,422**, not **3,712**.
-
-This has now been corrected. We apologize for the mistake. Please refer to the official [MA-52 dataset page](https://huggingface.co/datasets/kunli-cs/MA-52) for the source information.
+> [!WARNING]
+> **Correction on Table 1**
+>
+> We identified a typo in the **MA-52** entry of **Table 1**.
+> The correct number of samples is **22,422**, not **3,712**.
+>
+> This has now been corrected. We apologize for the mistake.
+> Please refer to the official [MA-52 dataset page](https://huggingface.co/datasets/kunli-cs/MA-52) for the source information.
 
 **[07/04/2026]**
 
