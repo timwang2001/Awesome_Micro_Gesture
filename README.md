@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/04/30 | - | [Real-Time Control of a Virtual Orchestra by Recognition of Conducting Gestures](https://arxiv.org/abs/2604.27957)<br>Authors: Mert Mermerci, Emile Pascoe, Fredrik Edström, Hedvig Kjellström<br>arXiv: 2604.27957 | ArXiv | - |
+| 2026/04/29 | - | [EdgeSpike: Spiking Neural Networks for Low-Power Autonomous Sensing in Edge IoT Architectures](https://arxiv.org/abs/2604.27004)<br>Authors: Gustav Olaf Yunus Laitinen-Fredriksson Lundstrom-Imanov, Taner Yilmaz<br>arXiv: 2604.27004 | ArXiv | - |
+| 2026/04/17 | - | [Cross-Modal Generation: From Commodity WiFi to High-Fidelity mmWave and RFID Sensing](https://arxiv.org/abs/2604.16558)<br>Authors: Zhixiong Yang, Long Jing, Yao Li, Shuli Cheng, Guoxuan Chi, Chenyu Wen<br>arXiv: 2604.16558 | ArXiv | - |
+| 2026/04/16 | - | [Prompt-to-Gesture: Measuring the Capabilities of Image-to-Video Deictic Gesture Generation](https://arxiv.org/abs/2604.14953)<br>Authors: Hassan Ali, Doreen Jirak, Luca Müller, Stefan Wermter<br>arXiv: 2604.14953 | ArXiv | - |
+| 2026/04/15 | - | [EMGFlow: Robust and Efficient Surface Electromyography Synthesis via Flow Matching](https://arxiv.org/abs/2604.13685)<br>Authors: Boxuan Jiang, Chenyun Dai, Can Han<br>arXiv: 2604.13685 | ArXiv | - |
+| 2026/04/13 | - | [From Multimodal Signals to Adaptive XR Experiences for De-escalation Training](https://arxiv.org/abs/2604.11570)<br>Authors: Birgit Nierula, Karam Tomotaki-Dawoud, Daniel Johannes Meyer, Iryna Ignatieva, Mina Mottahedin, Thomas Koch, Sebastian Bosse<br>arXiv: 2604.11570 | ArXiv | - |
+| 2026/04/06 | - | [On Optimizing Electrode Configuration for Wrist-Worn sEMG-Based Thumb Gesture Recognition](https://arxiv.org/abs/2604.04623)<br>Authors: Wenjuan Zhong, Chenfei Ma, Kianoush Nazarpour<br>arXiv: 2604.04623 | ArXiv | - |
+| 2026/04/01 | - | [Semantically Annotated Multimodal Dataset for RF Interpretation and Prediction](https://arxiv.org/abs/2604.01433)<br>Authors: Steve Blandino, Jelena Senic, Raied Caromi, Samuel Berweger, Anuraag Bodi, Camillo Gentile, Nada Golmie<br>arXiv: 2604.01433 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
