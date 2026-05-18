@@ -14,7 +14,7 @@ This is the official repository of `Micro-Gesture Recognition: A Survey of Datas
 > (\*Equal Contribution, †Corresponding Authors)
 <h5 align="center">  
 
- ****[Paper](https://www.mi-research.net/article/doi/10.1007/s11633-025-1629-x)**** | **[ArXiv](https://ArXiv.org/)** | **[Github Page](https://github.com/timwang2001/Awesome_Micro_Gesture)**
+ ****[Paper](https://www.mi-research.net/article/doi/10.1007/s11633-025-1629-x)**** | **[ArXiv](https://www.mi-research.net/article/exportPdf?id=653b8669-5c9b-408e-bc60-265c0aa57df4&language=en)** | **[Github Page](https://github.com/timwang2001/Awesome_Micro_Gesture)**
 
 </h5>
 
