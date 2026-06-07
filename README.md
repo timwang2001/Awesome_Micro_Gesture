@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/05/29 | - | [Recognizing Co-Speech Gestures in-the-Wild](https://arxiv.org/abs/2605.31589)<br>Authors: Sindhu B Hegde, K R Prajwal, Andrew Zisserman<br>arXiv: 2605.31589 | ArXiv | - |
+| 2026/05/29 | - | [MyoSem: Aligning Electromyography to Natural-Language Action Semantics for Hand Action Understanding](https://arxiv.org/abs/2606.00174)<br>Authors: Chiyue Wang, Dong She, Yang Gao, Zhanpeng Jin<br>arXiv: 2606.00174 | ArXiv | - |
+| 2026/05/28 | - | [Gesture-Aware Indoor THz ISAC Systems for Adaptive Resource Allocation](https://arxiv.org/abs/2605.29913)<br>Authors: Zhonghao Liu, Yinchao Yang, Yahao Ding, Yixuan Wang, Mohammad Shikh-Bahaei<br>arXiv: 2605.29913 | ArXiv | - |
+| 2026/05/28 | - | [NeuroEdge: Real-Time Hand Gesture Recognition with High-Density EMG Using Deep Learning at the Edge](https://arxiv.org/abs/2605.29326)<br>Authors: Peter Chudinov, Zhenyu Lin, Jay Motamarry, Srihita Panati, Xiaorong Zhang, Zhuwei Qin<br>arXiv: 2605.29326 | ArXiv | - |
+| 2026/05/26 | - | [Same Signal, Different Story: Demystifying Receiver Effects in Wi-Fi Channel State Information](https://arxiv.org/abs/2605.26836)<br>Authors: Fabian Portner, Francesco Gringoli, Matthias Hollick, Arash Asadi<br>arXiv: 2605.26836 | ArXiv | - |
+| 2026/05/22 | - | [Sketch Bug: Using Sketch-Based Input for Interactive Code Debugging](https://arxiv.org/abs/2605.24228)<br>Authors: Helen Weixu Chen, Daniel Vogel<br>arXiv: 2605.24228 | ArXiv | - |
+| 2026/05/22 | - | [Online Hand Gesture Recognition Using 3D Convolutional Neural Networks](https://arxiv.org/abs/2605.23409)<br>Authors: Yinghao Qin, Tijana Timotijevic<br>arXiv: 2605.23409 | ArXiv | - |
+| 2026/05/16 | - | [iMiGUE-3K: A Large-Scale Benchmark for Micro-Gesture Analysis with Self-Supervised Learning](https://arxiv.org/abs/2605.17179)<br>Authors: Chengyan Wang, Haoyu Chen, Hui Wei, Yueyi Yang, Yunquan Chen, Guoying Zhao<br>arXiv: 2605.17179 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
