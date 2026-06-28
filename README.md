@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/06/22 | - | [Integrated Sensing and Communications for Real-time Avatar Control in XR over 5G](https://arxiv.org/abs/2606.23771)<br>Authors: Nabeel Nisar Bhat, Javad Sameri, Rreze Halili, Rafael Berkvens, Maria Torres Vega, Jeroen Famaey<br>arXiv: 2606.23771 | ArXiv | - |
+| 2026/06/11 | - | [GIVE: Grounding Human Gestures in Vision-Language-Action Models](https://arxiv.org/abs/2606.13435)<br>Authors: Pengfei Liu, Gen Li, Junqiao Fan, Boyu Ma, Jindou Jia, Yang Xiao, Jianfei Yang<br>arXiv: 2606.13435 | ArXiv | - |
+| 2026/06/11 | - | [A Multi-Modal Framework with Cross-Subject Pseudo-Labeling and Semantic Alignment for Micro-Gesture Recognition](https://arxiv.org/abs/2606.13030)<br>Authors: Haoran Zhang, Haokun Zhang, Pengyu Liu, Yujia Zhang, Weibao Xue, Yanbin Hao<br>arXiv: 2606.13030 | ArXiv | - |
+| 2026/06/10 | - | [Motion Reinforces Appearance: RGB-Skeleton Gated Residual Fusion for Micro-Gesture Online Recognition](https://arxiv.org/abs/2606.11645)<br>Authors: Jialin Liu, Xinwen He, Pengyu Liu, Jiale Shi, Huaijuan Zang, Yanbin Hao<br>arXiv: 2606.11645 | ArXiv | - |
+| 2026/06/08 | - | [Self-supervised Learning Matters: A Simple Ensemble Solution for Micro-Gesture Recognition](https://arxiv.org/abs/2606.09261)<br>Authors: Tingyi Liu, Kun Li, Fei Wang, Junjie Chen, Zhiliang Wu, Jihao Gu, Haixu Liu, Dan Guo<br>arXiv: 2606.09261 | ArXiv | - |
+| 2026/06/05 | - | [OpenGlass: Ultra-Low-Power On-Device AI Eyewear with Event-based Vision](https://arxiv.org/abs/2606.07431)<br>Authors: Pietro Bonazzi, Julian Moosmann, Ahmet Celik, Philipp Mayer, Michele Magno<br>arXiv: 2606.07431 | ArXiv | - |
+| 2026/06/05 | - | [Spatial-Temporal Decoupled Adapter for Micro-gesture Online Recognition](https://arxiv.org/abs/2606.07355)<br>Authors: Xucheng Shen, Kun Li, Fei Wang, Wei Qian, Jin Jiang, Dan Guo<br>arXiv: 2606.07355 | ArXiv | - |
+| 2026/05/29 | - | [Recognizing Co-Speech Gestures in-the-Wild](https://arxiv.org/abs/2605.31589)<br>Authors: Sindhu B Hegde, K R Prajwal, Andrew Zisserman<br>arXiv: 2605.31589 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
