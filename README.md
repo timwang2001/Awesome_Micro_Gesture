@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/07/08 | - | [A Graph Neural Network Model for Real-Time Gesture Recognition Based on sEMG Signals](https://arxiv.org/abs/2607.07850)<br>Authors: Pragatheeswaran Vipulanandan, Kamal Premaratne, Manohar Murthi<br>arXiv: 2607.07850 | ArXiv | - |
+| 2026/07/04 | - | [Conservative Subject Invariant EMG-based Gesture Recognition](https://arxiv.org/abs/2607.03783)<br>Authors: Hamed Rafiei, Ali Mousavi<br>arXiv: 2607.03783 | ArXiv | - |
+| 2026/06/30 | - | [PGUDA: Pressure-Guided Unsupervised Domain Adaptation with Cross-Modal Knowledge Distillation for sEMG-Based Gesture Recognition](https://arxiv.org/abs/2606.31349)<br>Authors: Yurui Liu, Xiao-Cong Zhong, Qisong Wang, Xuefu Wang, Dan Liu, Jinwei Sun<br>arXiv: 2606.31349 | ArXiv | - |
+| 2026/06/30 | - | [LLM-Powered Interactive Robotic Action Synthesis from Multimodal Speech, Gestures, and Music](https://arxiv.org/abs/2606.31158)<br>Authors: Snehasis Banerjee, Ranjan Dasgupta<br>arXiv: 2606.31158 | ArXiv | - |
+| 2026/06/28 | - | [Temporal Posed and Spontaneous Gesture Recognition from Electromyography in the Rock-Paper-Scissors Game](https://arxiv.org/abs/2606.29423)<br>Authors: Xin Wei, Huakun Liu, Felix Dollack, Monica Perusquia-Hernandez<br>arXiv: 2606.29423 | ArXiv | - |
+| 2026/06/22 | - | [Integrated Sensing and Communications for Real-time Avatar Control in XR over 5G](https://arxiv.org/abs/2606.23771)<br>Authors: Nabeel Nisar Bhat, Javad Sameri, Rreze Halili, Rafael Berkvens, Maria Torres Vega, Jeroen Famaey<br>arXiv: 2606.23771 | ArXiv | - |
+| 2026/06/11 | - | [GIVE: Grounding Human Gestures in Vision-Language-Action Models](https://arxiv.org/abs/2606.13435)<br>Authors: Pengfei Liu, Gen Li, Junqiao Fan, Boyu Ma, Jindou Jia, Yang Xiao, Jianfei Yang<br>arXiv: 2606.13435 | ArXiv | - |
+| 2026/06/11 | - | [A Multi-Modal Framework with Cross-Subject Pseudo-Labeling and Semantic Alignment for Micro-Gesture Recognition](https://arxiv.org/abs/2606.13030)<br>Authors: Haoran Zhang, Haokun Zhang, Pengyu Liu, Yujia Zhang, Weibao Xue, Yanbin Hao<br>arXiv: 2606.13030 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
