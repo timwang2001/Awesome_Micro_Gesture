@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/07/30 | - | [A Montage-Agnostic Encoder for Calibration-Light Cross-User Gesture Recognition from Surface Electromyography](https://arxiv.org/abs/2607.27565)<br>Authors: Jethro Odeyemi, W. J. Zhang<br>arXiv: 2607.27565 | ArXiv | - |
+| 2026/07/24 | - | [Multimodal Surface EMG Hand Gesture Recognition Using Query-Based Transformers for Prosthetic Control](https://arxiv.org/abs/2607.22779)<br>Authors: Federico Del Pup, Elisa Tentori, Manfredo Atzori<br>arXiv: 2607.22779 | ArXiv | - |
+| 2026/07/23 | - | [Leveraging Agonistic-Antagonistic Coactivation in Single-Grid HDsEMG for Hand Gesture Recognition](https://arxiv.org/abs/2607.21809)<br>Authors: Firas Darwish, Dhiyaa Al Jorf, Costanza Armanini, Eion Tyacke, Farah E. Shamout<br>arXiv: 2607.21809 | ArXiv | - |
+| 2026/07/17 | - | [An Exploratory Study of Single Channel Surface Electromyography for Hand Gesture Classification](https://arxiv.org/abs/2607.15972)<br>Authors: Daanish Hindustani<br>arXiv: 2607.15972 | ArXiv | - |
+| 2026/07/16 | - | [Understanding of Task-specific and Subject-specific Components in Surface EMG](https://arxiv.org/abs/2607.14744)<br>Authors: Yangyang Yuan, Jionghui Liu, Xinyu Jiang, ChihHong Chou, Chenyun Dai, Jiahao Fan<br>arXiv: 2607.14744 | ArXiv | - |
+| 2026/07/15 | - | [GMoT: Gated Motion-Aware Tokenization for Fine-Grained Micro-Gesture Video Reasoning with Multimodal LLMs](https://arxiv.org/abs/2607.16322)<br>Authors: Taorui Wang, Wei Xia, Hui Ma, Zijia Song, Jiayu Zhang, Zeheng Wang, Yong Xu, Zitong Yu<br>arXiv: 2607.16322 | ArXiv | - |
+| 2026/07/14 | - | [Real-Time sEMG-Based Telecontrol of an Assistive Robotic Arm Using a 1D Convolutional Neural Network](https://arxiv.org/abs/2607.16310)<br>Authors: Edgar Manacorda, Mena Samir Kama Abouseffien, Olivier Lecompte, Amandine Gesta, Abolfazl Mohebbi<br>arXiv: 2607.16310 | ArXiv | - |
+| 2026/07/08 | - | [A Graph Neural Network Model for Real-Time Gesture Recognition Based on sEMG Signals](https://arxiv.org/abs/2607.07850)<br>Authors: Pragatheeswaran Vipulanandan, Kamal Premaratne, Manohar Murthi<br>arXiv: 2607.07850 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
