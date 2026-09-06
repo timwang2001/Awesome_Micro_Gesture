@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/09/01 | - | [Beyond Landmark Extraction: A Framework for Robust Geometric Feature Construction in Structured Image Classification](https://arxiv.org/abs/2609.00634)<br>Authors: Saravana Mauree, Sakshi Arya<br>arXiv: 2609.00634 | ArXiv | - |
+| 2026/09/01 | - | [UniScale: Exploring Unimanual Gesture Mapping Strategies for Gaze+Pinch-based Scaling Interaction](https://arxiv.org/abs/2609.00500)<br>Authors: Kyoungwhan Mheen, Jinwook Kim, Sang Ho Yoon<br>arXiv: 2609.00500 | ArXiv | - |
+| 2026/08/29 | - | [EITWatch: Smartwatch-Integrated Planar Electrical Impedance Tomography for Hand Gesture Recognition](https://arxiv.org/abs/2608.29415)<br>Authors: Xuanyou Liu, Novel Alam, Karan Ahuja<br>arXiv: 2608.29415 | ArXiv | - |
+| 2026/08/25 | - | [Joint-Embedding Prediction of Masked Point Tubes for Self-Supervised Learning on 4D Point Cloud Videos](https://arxiv.org/abs/2608.24093)<br>Authors: Jheng-Ling Lee, Shang-Tse Chen<br>arXiv: 2608.24093 | ArXiv | - |
+| 2026/08/17 | - | [SafeGesture: Evaluating Fine-Grained Hand Gesture Understanding in Vision-Language Models through Scenario-Conditioned Safety Interpretation](https://arxiv.org/abs/2608.16081)<br>Authors: Taegang Kim, Saleh Afroogh, Junfeng Jiao<br>arXiv: 2608.16081 | ArXiv | - |
+| 2026/08/14 | - | [Zero-MELO: Test-Time Evidence Calibration with Multimodal LLMs for Zero-Shot Micro-Gesture Recognition](https://arxiv.org/abs/2608.14854)<br>Authors: Chengyan Wang, Hanliang Xie, Yueyi Yang, Haoyu Chen<br>arXiv: 2608.14854 | ArXiv | - |
+| 2026/08/13 | - | [UniCon-Former: Unified Convolution Transformer is All You Need for Hand Gesture Recognition](https://arxiv.org/abs/2608.13217)<br>Authors: Mallika Garg, Debashis Ghosh, Pyari Mohan Pradhan<br>arXiv: 2608.13217 | ArXiv | - |
+| 2026/08/12 | - | [A Browser-Based Gesture-Driven Avatar Interaction Framework for Metaverse Onboarding Environments](https://arxiv.org/abs/2608.11708)<br>Authors: Deepti Parachuri, Chhayank Sahu, Sameer Singh Choudhary<br>arXiv: 2608.11708 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
