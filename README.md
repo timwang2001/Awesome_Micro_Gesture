@@ -75,6 +75,14 @@ This section tracks representative MGR methods in chronological order, covering 
 
 | Date    | Institute | Paper                                                                                                                                                                                   | Publication | Others |
 |---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|--------|
+| 2026/10/25 | - | [Cross-User Adaptation for sEMG Gesture Recognition via Continual Learning](https://arxiv.org/abs/2610.34011)<br>Authors: Aran Ramakrishnan, Shubhi Mishra, Tyler Ham, Assel Kembay, Jason Eshraghian<br>arXiv: 2610.34011 | ArXiv | - |
+| 2026/10/23 | - | [VERA-Hand: A Verified Multidimensional Benchmark for 2D Hand Pose Estimation in Third-Person Dynamic Gesture Videos](https://arxiv.org/abs/2610.32517)<br>Authors: Gibran Benitez-Garcia, Hiroki Takahashi<br>arXiv: 2610.32517 | ArXiv | - |
+| 2026/10/18 | - | [SurGPT: A Multi-Task Foundation Model for Robotic Surgical Skills Assessment and Gesture Recognition](https://arxiv.org/abs/2610.25426)<br>Authors: Parham M. Kebria, Saeid Nahavandi, Mehrdad Saif, Fernando Bello<br>arXiv: 2610.25426 | ArXiv | - |
+| 2026/10/14 | - | [IMU-Bench: Benchmarking Wrist IMU Representations Across Kinematic, Semantic and Clinical Tasks](https://arxiv.org/abs/2610.19481)<br>Authors: Yiquan Li, Aidan Bradshaw, Chenfeng Gao, Karan Ahuja<br>arXiv: 2610.19481 | ArXiv | - |
+| 2026/10/05 | - | [Trajectory-Guided Tokenization of Complex CSI for Wi-Fi Sensing](https://arxiv.org/abs/2610.06288)<br>Authors: Ziyi Wang, Kenuo Xu, Jichu Jiang, Yumeng Yang, Zheng Chen, Xiaofei Bai, Muge Chen, Xuyang Chen, Jinglei He, Jannik Hammel Nielsen, Stefan Schmid<br>arXiv: 2610.06288 | ArXiv | - |
+| 2026/09/23 | - | [ViMoWear: Visual Motion-Guided sEMG-IMU Representation Learning for Subject-Independent Thumb Gesture Recognition](https://arxiv.org/abs/2609.27595)<br>Authors: Wenjuan Zhong, Chenfei Ma, Kianoush Nazarpour<br>arXiv: 2609.27595 | ArXiv | - |
+| 2026/09/22 | - | [EMGBlend: Heterogeneity-Aware Self-Supervised Pretraining for Gesture and Force Decoding](https://arxiv.org/abs/2609.25582)<br>Authors: Yuwei Jia, Cheng Zhong, Jinyang Yu, Zhe Cui<br>arXiv: 2609.25582 | ArXiv | - |
+| 2026/09/21 | - | [Real-Time Hand Gesture Recognition for OpenXR Using Transformer-Based Machine Learning](https://arxiv.org/abs/2609.25466)<br>Authors: Salar Rezayani, Russell Butler<br>arXiv: 2609.25466 | ArXiv | - |
 | 2026/03 | INRIA | [B-MoE: A Body-Part-Aware Mixture-of-Experts "All Parts Matter" Approach to Micro-Action Recognition](https://arxiv.org/abs/2603.24245) | ArXiv | - |
 | 2026/03 | NUPT | [FG-SGL: Fine-Grained Semantic Guidance Learning via Motion Process Decomposition for Micro-Gesture Recognition](https://arxiv.org/abs/2603.16269) | ArXiv | - |
 |2026/01| NUPT | [Adaptive Spatiotemporal Graph Network with Cross-Stream Interaction for Micro-Gesture Recognition](https://ieeexplore.ieee.org/abstract/document/11399839) | ICCECE | - |
@@ -98,8 +106,6 @@ This section tracks representative MGR methods in chronological order, covering 
 |2022/12| TJU | [CdCLR: Clip-Driven Contrastive Learning for Skeleton-Based Action Recognition](https://ieeexplore.ieee.org/document/10008837)| VCIP | -|
 |2022/08| Univ. of Oulu | [Efficient dense-graph convolutional network with inductive prior augmentations for unsupervised micro-gesture recognition](https://ieeexplore.ieee.org/document/9956565/authors#authors) | ICPR |-|
 |2021/07| TJU             | [iMiGUE: An Identity-free Video Dataset for Micro-Gesture Understanding and Emotion Analysis](https://ArXiv.org/abs/2107.00285)                                                    | CVPR       | [Github](https://github.com/linuxsino/iMiGUE) |
-
-
 ## ♥️Contributing
 
 We warmly welcome contributions from the community. You can submit pull requests to add new papers, datasets, projects, or to fix incorrect entries. Please format each new row as `"Date|Institute|Paper|Publication|Project link"` to keep the table consistent. Thank you for helping improve this repository.
